@@ -2,7 +2,7 @@
 
 Rules For Contributing
 * Star The Repository
-* Follow me
+
 
 Feel free to submit issues and enhancement requests.
 Contributing
