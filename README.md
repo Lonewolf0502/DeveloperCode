@@ -1,8 +1,8 @@
 # DSA_Code
 
 Rules For Contributing
-* Star The Repository
-
+* Star The Repository<br>
+* Follow Me
 
 Feel free to submit issues and enhancement requests.<br>
 Keep Contributing !!
