@@ -4,8 +4,8 @@ Rules For Contributing
 * Star The Repository
 
 
-Feel free to submit issues and enhancement requests.
-Contributing
+Feel free to submit issues and enhancement requests.<br>
+Keep Contributing !!
 
 Please refer to each project's style and contribution guidelines for submitting patches and additions. In general, we follow the "fork-and-pull" Git workflow.
 
