@@ -11,9 +11,9 @@ if (len == 0)
 System.out.println("The string is ?.");  
 return;  
 }  
-if (len > 10)   
+if (len > 4)   
 {  
-System.out.println("\n The given number has more than 9 digits.");  
+System.out.println("\n The given number has more than 4 digits.");  
 return;  
 }    
 String[] onedigit = new String[] {"Zero", "One", "Two", "Three", "Four", "Five", "Six", "Seven", "Eight", "Nine"}; 
