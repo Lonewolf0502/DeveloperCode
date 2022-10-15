@@ -43,7 +43,7 @@ function App() {
   };
 
   return (
-    <section className="w-full h-screen flex items-center justify-center bg-[#efeef5]">
+    <section className="w-full h-screen flex items-center justify-center bg-[#efeef5] px-6">
       <div className="relative w-[40rem] bg-white shadow-xl h-96 rounded-xl -mt-32">
         <header className="border-b border-gray-300">
           <ul className="px-6">

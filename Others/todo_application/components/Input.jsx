@@ -19,7 +19,7 @@ const Input = ({ getData, lists, data, setData, onEdit, editStatus }) => {
   };
 
   return (
-    <section className="absolute bottom-30 -mt-1 left-1/2 -translate-x-1/2 p-4 shadow-xl w-[44rem] bg-white border border-gray-300 rounded-xl">
+    <section className="relative lg:absolute lg:bottom-30 mt-4 lg:-mt-1 lg:left-1/2 lg:-translate-x-1/2 p-4 shadow-xl w-full lg:w-[44rem] bg-white border border-gray-300 rounded-xl">
       <main>
         <input
           value={data.title}
