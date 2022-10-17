@@ -3,7 +3,7 @@ class Solution
     int sum;
 
 public:
-    int help(TreeNode *root)
+    int Find(TreeNode *root)
     {
         if (!root)
             return 0;
@@ -17,7 +17,7 @@ public:
     int maxPathSum(TreeNode *root)
     {
         sum = INT_MIN;
-        help(root);
+        Find(root);
         return sum;
     }
 };
