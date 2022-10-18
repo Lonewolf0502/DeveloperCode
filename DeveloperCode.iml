@@ -6,7 +6,6 @@
       <sourceFolder url="file://$MODULE_DIR$/Java" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Leetcode" isTestSource="false" />
     </content>
-    <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
   </component>
 </module>
