@@ -1,0 +1,65 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap');
+
+
+body{
+    background-color:  hsl(217, 54%, 11%);
+    /* min-width: 100vh; */
+    /* display: flex; */
+    font-size: 18px;
+    box-sizing: border-box;
+    border-radius: 1px;
+    
+    
+}
+
+.container{
+    max-width: 300px;
+    max-height: 300px;
+    margin: 15% auto;
+    
+}
+
+
+.card{
+    background-color: hsl(216, 50%, 16%);
+    padding: 15px;
+    border-radius: 10px;
+    max-height: 540px;
+}
+
+.card img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.head{
+    color: hsl(0, 0%, 100%);
+}
+
+.para{
+    color: hsl(0, 0%, 100%);
+}
+
+
+
+
+
+.eth{
+    
+    color: hsl(178, 100%, 50%);
+    display: inline-flex;
+
+}
+
+    
+
+    
+.time{
+    float: right;
+    color: hsl(0, 0%, 100%);
+    
+}
+span{
+    color: hsl(0, 0%, 100%);
+}
