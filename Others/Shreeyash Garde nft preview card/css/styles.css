@@ -1,0 +1,83 @@
+.container{
+  width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  background-color: hsl(217, 54%, 11%); ;
+  }
+.box{
+  height:425px;
+  width: 250px;
+  background-color:hsl(216, 50%, 16%) ;
+  border-radius: 15px;
+}
+.image{
+height: 220px;
+width: 220px;
+border-radius: 5px;
+margin-left: 15px;
+margin-top: 15px;
+margin-right: 15px;
+}
+p{
+  font-size: 15px;
+  font-weight: bolder;
+  margin-left: 15px;
+  color: white;
+  font-family: sans-serif;
+
+}
+.para{
+  font-weight: lighter;
+  font-size: 13px;
+  color: hsl(0, 0%, 100% ,60%);
+  font-family: "Outfit",sans-serif;
+}
+.eth{
+  margin-left: 15px;
+  margin-top: 0px;
+
+}
+.ethe{
+  margin-left: 30px;
+  position: absolute;
+  margin-top: 330px;
+  font-size: 17px;
+  color:hsl(178, 100%, 50%);
+}
+.clock{
+  margin-left: 110px;
+}
+.time{
+color:hsl(0, 0%, 100% ,60%);
+position: absolute;
+  margin-left: 160px;
+  margin-top: 0;
+}
+hr{
+  border-style: none;
+  border-top-style: solid ;
+  margin-left: 15px;
+  margin-right: 15px;
+}
+.face{
+  margin-left: 15px;
+  width: 40px;
+}
+.about{
+  font-size: 13px;
+  font-weight: lighter;
+position: absolute;
+  margin-left: 70px;
+  margin-top: 53px;
+}
+span{
+  font-weight: lighter;
+  font-size: 13px;
+  color: hsl(0, 0%, 100% ,60%);
+}
+.me{
+  margin-left: 0px;
+}

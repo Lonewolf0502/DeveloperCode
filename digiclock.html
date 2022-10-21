@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>JavaScript Digital Clock</title>
+  <style>
+    body {
+      font-family: sans-serif;
+      margin: 0;
+      padding: 0;
+      height: 100vh;
+    }
+
+    .clock {
+      width: 100%;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      background-color: #424558;
+    }
+
+    .time {
+      font-size: 80px;
+      font-weight: bold;
+      color: #fff;
+    }
+
+    .date-time {
+      font-size: 20px;
+      color: #fff;
+    }
+
+    @media screen and (max-width: 768px) {
+      .time {
+        font-size: 50px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="clock">
+    <div class="time"></div>
+    <div class="date-time"></div>
+  </div>
+
+  <script>
+    var time = document.querySelector('.time');
+    var dateTime = document.querySelector('.date-time');
+
+    function updateClock() {
+      // Get the current time, day , month and year
+      var now = new Date();
+      var hours = now.getHours();
+      var minutes = now.getMinutes();
+      var seconds = now.getSeconds();
+      var day = now.getDay();
+      var date = now.getDate();
+      var month = now.getMonth();
+      var year = now.getFullYear();
+
+      // store day and month name in an array
+      var dayNames = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
+      var monthNames = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
+
+      // format date and time
+      hours = hours % 12 || 12;
+      minutes = minutes < 10 ? '0' + minutes : minutes;
+      seconds = seconds < 10 ? '0' + seconds : seconds;
+      date = date < 10 ? '0' + date : date;
+
+      // display date and time
+      var period = hours < 12 ? 'AM' : 'PM';
+      time.innerHTML = hours + ':' + minutes + ':' + seconds + ' ' + period;
+      dateTime.innerHTML = dayNames[day] + ', ' + monthNames[month] + ' ' + date + ', ' + year;
+    }
+
+    updateClock();
+    setInterval(updateClock, 1000);
+  </script>
+</body>
+
+</html>
