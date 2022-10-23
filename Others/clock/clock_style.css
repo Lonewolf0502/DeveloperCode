@@ -1,0 +1,177 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    --my-shadow: rgba(128, 128, 128, 0.658);
+}
+
+.clock{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.clock_cadre{
+    height: 400px;
+    width: 600px;
+    background: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.clock_body{
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    background: white;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    box-shadow: 2px 0px 10px var(--my-shadow);
+    color: rgba(0, 0, 0, 0.637);
+}
+
+.clock_center{
+    background: rgb(177, 164, 164);
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    top: 47%;
+    left: 47.75%;
+    position: absolute;
+    z-index: 50;
+}
+
+.clock_second{
+    background: yellow;
+    height: 70px;
+    width: 3px;
+    position: absolute;
+    border-radius: 50% 50% 0 0;
+    bottom: 50%;
+    left: 49.5%;
+    z-index: 49;
+    box-shadow: 0.5px 0px 5px var(--my-shadow);
+    transform-origin: bottom;
+    display: none;
+}
+
+.clock_minute{
+    background: rgba(255, 0, 0, 0.884);
+    height: 50px;
+    width: 4px;
+    position: absolute;
+    bottom: 50%;
+    left: 49.3%;
+    z-index: 48;
+    box-shadow: 0.5px 0px 5px var(--my-shadow);
+    transform-origin: bottom;
+    border-radius: 50% 50% 0 0;
+    display: none;
+}
+
+.clock_hour{
+    background: blue;
+    height: 35px;
+    width: 5px;
+    position: absolute;
+    bottom: 50%;
+    left: 49%;
+    z-index: 47;
+    transform-origin: bottom;
+    box-shadow: 1px 0px 5px var(--my-shadow);
+    border-radius: 50% 50% 0 0;
+    display: none;
+}
+
+h2.twelve{
+    position: absolute;
+    top: 1%;
+    left: 44%;
+    margin: 0;
+}
+
+h2.nine{
+    position: absolute;
+    top: 44%;
+    left: 3%;
+    margin: 0;
+}
+
+h2.three{
+    position: absolute;
+    top: 44%;
+    right: 3%;
+    margin: 0;
+}
+
+h2.two{
+    position: absolute;
+    top: 23%;
+    right: 10%;
+    margin: 0;
+}
+
+h2.one{
+    position: absolute;
+    top: 7%;
+    right: 25%;
+    margin: 0;
+}
+
+h2.four{
+    position: absolute;
+    bottom: 23%;
+    right: 10%;
+    margin: 0;
+}
+
+h2.five{
+    position: absolute;
+    bottom: 7%;
+    right: 25%;
+    margin: 0;
+}
+
+h2.six{
+    position: absolute;
+    bottom: 1%;
+    left: 47.5%;
+    margin: 0;
+}
+
+h2.ten{
+    position: absolute;
+    top: 23%;
+    left: 10%;
+    margin: 0;
+}
+
+h2.eleven{
+    position: absolute;
+    top: 7%;
+    left: 25%;
+    margin: 0;
+}
+
+h2.eight{
+    position: absolute;
+    bottom: 23%;
+    left: 10%;
+    margin: 0;
+}
+
+h2.seven{
+    position: absolute;
+    bottom: 7%;
+    left: 25%;
+    margin: 0;
+}
+
+
