@@ -1,0 +1,141 @@
+.image{
+    height: 80px;
+    width: 80px;
+}
+*{
+    padding: 0;
+    margin: 0;
+}
+
+header{
+    background-color: #f7f7f7;
+    padding-bottom: 20px;
+    padding-top: 20px;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+.head-link{
+    font-size: 15px;
+    text-decoration: none;
+    color: #1098ad;
+    padding-top: 5px;
+    font-weight: bold;
+    float: left;
+    padding-right: 3%;
+}
+.clearfix::after{
+    clear:both;
+    content:" ";
+    display: block;
+}
+
+ul{
+    list-style: none;
+}
+a{
+    color: #1098ad;
+    text-decoration: none;
+}
+article{
+    font-size: 20px;
+    width: 850px;
+    margin-left: 10%;
+    
+    float: left;
+    margin-bottom: 10%;
+    
+}
+aside{
+    background-color: aliceblue;
+    border-top: 5px solid #1098ad;
+    border-bottom: 5px solid #1098ad;
+    padding: 25px 0;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    width: 300px;
+    margin-right: 5%;
+  
+    float: right;
+}
+
+
+h2{
+    font-family: sans-serif;
+    color:#1098ad;
+    font-size: 23px;
+    
+    margin-right: 45%;
+    float: left;
+}
+li{
+    margin: 25px;
+}
+p{
+    margin-top: 10px;
+    line-height: 1.5;
+   
+}
+.girl{
+    margin-bottom: 3%;
+    float: left;
+}
+h1{
+    font-family: sans-serif;
+    color:#1098ad;
+    padding: 40px 0;
+    
+}
+h3{
+    font-family: sans-serif;
+    color:#1098ad;
+    padding: 40px 0;
+}
+h1::after{
+    content: "TOP";
+    background-color: yellow;
+    font-size: 18px;
+    position:absolute;
+    right: 30%;
+    color: black;
+}
+body{
+    font-family: sans-serif;
+    border-top: 5px solid #1098ad;
+    position: relative;
+    margin-bottom: 5%;
+}
+footer{
+    
+    background-color: yellow;
+    clear: both;
+    text-align: center;
+}
+button{
+    position:absolute;
+    right: 20%;
+    bottom: 7%;
+    padding: 1% 1%;
+    font-size: large;
+    
+}
+.post{
+    text-transform: uppercase;
+    color: black;
+    text-align: center;
+}
+h2{
+    text-transform: uppercase;
+    font-style: italic;
+    font-size: 20px;
+}
+h1{
+    font-size:35px;
+}
+.girl{
+    height:50px;
+    width:50px;
+}
+
+.author{
+    font-size: 17px;
+}
