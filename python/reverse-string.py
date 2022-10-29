@@ -1,6 +1,13 @@
-string = input('Enter a string you want to reverse: ')
-s = string.split()[::-1]
-l = []
-for i in s:
-    l.append(i)
-print(" ".join(l))
+def reverse(s):
+    str = ""
+    for i in s:
+        str = i + str
+    return str
+  
+s = "hactoberfest"
+  
+print("The original string is : ", end="")
+print(s)
+  
+print("The reversed string(using loops) is : ", end="")
+print(reverse(s))
