@@ -26,6 +26,6 @@ Please refer to each project's style and contribution guidelines for submitting 
 Thanks to all the contributors who worked for this project to stay alive! 😊😎
 
 <a align="center" href="https://github.com/Lonewolf0502/DeveloperCode/graphs/contributors">
-  <img src="https://contrib.rocks/image?repo=lonewolf0502/DeveloperCode&&max=817" />
+  <img src="https://contrib.rocks/image?repo=lonewolf0502/DeveloperCode&&max=817 " />
 </a>
 
