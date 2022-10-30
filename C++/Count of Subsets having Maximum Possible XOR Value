@@ -1,0 +1,105 @@
+#include<iostream>
+#include<vector>
+#include<climits>
+using namespace std;
+
+int findMaxXor(int N, vector<int> arr, int MSB){
+
+   // Initialize required variables.
+   int index = 0;
+   int maxElemIndex = -1;
+   int maxElem = INT_MIN;
+
+   for(int i = MSB; i >= 0; i--){
+
+       // Find the index of the maximum element with ith bit set.
+       for(int j = index; j < N; j++){
+           if(arr[j] > maxElem && (arr[j] & (1 << i)) > 0){
+               maxElem = arr[j];
+               maxElemIndex = j;
+           }
+       }
+
+       // If there is no maximum element.
+       if(maxElemIndex == -1){
+           continue;
+       }
+
+       // As described in the approach.
+       swap(arr[index], arr[maxElemIndex]);
+
+       maxElemIndex = index;
+       index++;
+
+       // Update array elements with ith bit set except the just found element itself.
+       for(int j = 0; j < N; j++){
+           if((arr[j] & (1 << i)) && j != maxElemIndex){
+               arr[j] ^= arr[maxElemIndex];
+           }
+       }
+
+       // Updates for the next iteration.
+       maxElemIndex = -1;
+       maxElem = INT_MIN;
+   }
+
+   // Maximum xor value is the XOR of the array elements left.
+   int maxXor = 0;
+   for(int i = 0; i < N; i++) maxXor = maxXor ^ arr[i];
+
+   // Return the output.
+   return maxXor;
+}
+
+int countMaxXorSubsets(int N, vector<int>& arr){
+
+   // Maximum element and bits in it.
+   int maxElem = INT_MIN;
+   int countBits = 0;
+  
+   
+   for(int i = 0; i < N; i++) maxElem = max(maxElem, arr[i]);
+   while(maxElem > 0){
+       countBits++;
+       maxElem >>= 1;
+   }
+
+
+   int maxXor = findMaxXor(N, arr, countBits);
+
+   int dp[N+1][maxXor+1];
+  
+  
+   for (int i=0; i<=N; i++)
+       for (int j=0; j<=maxXor; j++)
+           dp[i][j] = 0;
+  
+   dp[0][0] = 1;
+   // Fill the dp table.
+   for (int i=1; i<=N; i++)
+       for (int j=0; j<=maxXor; j++)
+           dp[i][j] = dp[i-1][j] + dp[i-1][j^arr[i-1]];
+   
+   return dp[N][maxXor];
+}
+
+int main(){
+
+   // Input the size of N.
+   int N;
+   cout<<"Enter the value of N: ";
+   cin>>N;
+
+   // Input the array elements.
+   vector<int> arr(N);
+   cout<<"Enter the elements: ";
+   for(int i = 0; i < N; i++){
+       cin>>arr[i];
+   }
+
+   // Output the count of such subsets.
+   int countSubs = countMaxXorSubsets(N, arr);
+   cout<<countSubs<<endl;
+}
+
+// Time Complexity : O(n*m)
